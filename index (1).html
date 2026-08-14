@@ -1,0 +1,243 @@
+Claro! Vou deixar o código mais bonito e organizado, mantendo a ideia do seu blog, mas com um visual mais parecido com um **blog oficial do Neymar Jr.**, incluindo cabeçalho, cards para os posts, imagem, botões de curtida e um rodapé.
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Neymar Jr. Official</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f5f8;
+            color: #183C63;
+        }
+
+        header {
+            background: linear-gradient(135deg, #183C63, #075e54);
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 38px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        article {
+            display: flex;
+            gap: 20px;
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        article img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .conteudo {
+            flex: 1;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #183C63;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+            color: #666;
+        }
+
+        .conteudo p {
+            line-height: 1.6;
+        }
+
+        button {
+            border: none;
+            background-color: #eef3f7;
+            padding: 8px 14px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 8px;
+        }
+
+        button:hover {
+            background-color: #dce8f0;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            article {
+                flex-direction: column;
+            }
+
+            article img {
+                width: 100%;
+                height: 220px;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>⚽ Neymar Jr. Official</h1>
+        <p>História, carreira, títulos e curiosidades sobre Neymar Jr.</p>
+    </header>
+
+    <main>
+
+        <article>
+            <img src="neymar.jpg" alt="Neymar Jr.">
+
+            <div class="conteudo">
+                <h2>🌟 Neymar Jr.: uma história de talento</h2>
+
+                <p class="artigo-autor">Por: Arthur Liber</p>
+
+                <p>
+                    Neymar Jr. é um dos grandes nomes do futebol brasileiro.
+                    Desde muito jovem, chamou a atenção por seus dribles,
+                    velocidade e criatividade dentro de campo.
+                </p>
+
+                <p>
+                    Sua carreira ganhou destaque no Santos, onde conquistou
+                    títulos importantes e rapidamente se tornou conhecido
+                    pelos fãs de futebol em todo o mundo.
+                </p>
+
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+
+
+        <article>
+            <img src="neymar.jpg" alt="Neymar Jr. durante uma partida">
+
+            <div class="conteudo">
+                <h2>🏆 Os grandes momentos da carreira</h2>
+
+                <p class="artigo-autor">Por: Arthur Liber</p>
+
+                <p>
+                    Depois de fazer história no futebol brasileiro, Neymar
+                    seguiu para a Europa. No Barcelona, formou um ataque
+                    memorável ao lado de Lionel Messi e Luis Suárez.
+                </p>
+
+                <p>
+                    O jogador também teve uma passagem marcante pelo
+                    Paris Saint-Germain, tornando-se uma das principais
+                    estrelas do futebol mundial.
+                </p>
+
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+
+
+        <article>
+            <img src="neymar.jpg" alt="Neymar Jr. com a Seleção Brasileira">
+
+            <div class="conteudo">
+                <h2>🇧🇷 Neymar e a Seleção Brasileira</h2>
+
+                <p class="artigo-autor">Por: Arthur Liber</p>
+
+                <p>
+                    Neymar também construiu uma trajetória importante
+                    defendendo a Seleção Brasileira. Com a camisa do Brasil,
+                    participou de grandes competições e marcou muitos gols.
+                </p>
+
+                <p>
+                    Um dos momentos mais especiais aconteceu nos Jogos
+                    Olímpicos do Rio de Janeiro, em 2016, quando o Brasil
+                    conquistou a medalha de ouro no futebol masculino.
+                </p>
+
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Neymar Jr. Official — Blog criado por Arthur Liber</p>
+    </footer>
+
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+
+        botoes.forEach(function (botao) {
+
+            let curtiu = false;
+
+            botao.addEventListener("click", function () {
+
+                const texto = botao.querySelector("span");
+
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
+```
