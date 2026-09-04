@@ -1,148 +1,256 @@
-index.html
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Neymar Jr. Official</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f5f8;
+            color: #183C63;
+        }
+
+        header {
+            background: linear-gradient(135deg, #183C63, #075e54);
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 38px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        article {
+            display: flex;
+            gap: 20px;
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        article img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .conteudo {
+            flex: 1;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #183C63;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+            color: #666;
+        }
+
+        .conteudo p {
+            line-height: 1.6;
+        }
+
+        button {
+            border: none;
+            background-color: #eef3f7;
+            padding: 8px 14px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 8px;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background-color: #dce8f0;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            article {
+                flex-direction: column;
+            }
+
+            article img {
+                width: 100%;
+                height: 220px;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-<header>
-<h1>Meu blog tech</h1>
-<p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
-</header>
-<main>
-<article>
-<img src="imagem-blog.png"
-alt="Logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
-<div>
-<h2>Meu primeiro post</h2>
-<p class="artigo-autor">Por: Marcelo Paludetto</p>
-<p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
-tecnologia.</p>
 
-<button>❤️ <span>0</span></button>
-<button>👍 <span>0</span></button>
-</div>
-</article>
+    <header>
+        <h1>⚽ Neymar Jr. Official</h1>
+        <p>História, carreira, títulos e curiosidades sobre Neymar Jr.</p>
+    </header>
 
-<article>
-<img src="imagem-dados.jpg"
-alt="Ilustração do planeta Terra cercado por elementos digitais, representando a conectividade global e a tecnologia.">
-<div>
-<h2>A quantidade de dados no mundo é surreal</h2>
-<p class="artigo-autor">Por: Marcelo Paludetto</p>
-<p>Estima-se que 90% de todos os dados existentes no mundo hoje foram gerados apenas nos últimos dois
-anos. Vivemos em uma verdadeira explosão de informação que não para de acelerar.</p>
+    <main>
 
-<p class="artigo-fonte">Fonte: Jornal
-Opção
-</p>
-<button>❤️ <span>0</span></button>
-<button>👍 <span>0</span></button>
-</div>
-</article>
+        <article>
+            <img src="neymar.jpeg" alt="Neymar Jr.">
 
-<article>
-<img src="imagem-mouse.jpg"
-alt="Ilustração de uma caixa de madeira com tampa e encaixe, representando armazenamento ou organização.">
-<div>
-<h2>O primeiro mouse não era de plástico</h2>
-<p class="artigo-autor">Por: Giulliana Cestari</p>
-<p>Antes do design ergonômico e das luzes RGB, o primeiro mouse do mundo foi construído em madeira!
-Criado por Douglas Engelbart em 1964, ele tinha o formato de uma caixa quadrada e apenas um botão.
-</p>
+            <div class="conteudo">
+                <h2>🌟 Neymar Jr.: uma história de talento</h2>
 
-<p class="artigo-fonte">Fonte: TechTudo.</p>
+                <p class="artigo-autor">Por: Arthur Liber</p>
 
-<button>❤️ <span>0</span></button>
-<button>👍 <span>0</span></button>
-</div>
-</article>
+                <p>
+                    Neymar Jr. é um dos grandes nomes do futebol brasileiro.
+                    Desde muito jovem, chamou a atenção por seus dribles,
+                    velocidade e criatividade dentro de campo.
+                </p>
 
-<article>
-<img src="imagem-bluetooth.jpg"
-alt="Ilustração de dentes com coloração azul apresentando cáries, rachaduras e manchas próximas à gengiva.">
-<div>
-<h2>Por que o Bluetooth se chama assim?</h2>
-<p class="artigo-autor">Por: Giulliana Cestari</p>
-<p>O nome é uma homenagem ao rei viking Harald
-Blatand Gormsson, que unificou tribos da Escandinávia. Seu apelido era Harald "Bluetooth" porque
-seus
-dentes eram tão podres que tinham uma coloração azul escura.</p>
+                <p>
+                    Sua carreira ganhou destaque no Santos, onde conquistou
+                    títulos importantes e rapidamente se tornou conhecido
+                    pelos fãs de futebol em todo o mundo.
+                </p>
 
-<p class="artigo-fonte">Fonte: TechTudo
-</p>
+                <button class="curtir">
+                    ❤️ <span>0</span>
+                </button>
 
-<button>❤️ <span>0</span></button>
-<button>👍 <span>0</span></button>
-</div>
-</article>
+                <button class="curtir">
+                    👍 <span>0</span>
+                </button>
+            </div>
+        </article>
 
-<article>
-<img src="imagem-bug.jpg"
-alt="Ilustração de uma mariposa com asas abertas em tons de marrom, com padrões circulares nas asas.">
-<div>
-<h2>O "Bug" que era um bicho de verdade</h2>
-<p class="artigo-autor">Por: Giulliana Cestari</p>
-<p>O termo "bug" (inseto) para erros de software ficou famoso em 1947, quando engenheiros encontraram
-uma mariposa real presa dentro do computador Harvard Mark II, causando uma falha no sistema.</p>
+        <article>
+            <img src="neymar.jpg" alt="Neymar Jr. durante uma partida">
 
-<p class="artigo-fonte">Fonte: Educa
-Mais Brasil</p>
-<button>❤️ <span>0</span></button>
-<button>👍 <span>0</span></button>
-</div>
-</article>
+            <div class="conteudo">
+                <h2>🏆 Os grandes momentos da carreira</h2>
 
-<article>
-<img src="imagem-webcam.jpg"
-alt="Ilustração de uma câmera em tripé ao lado de uma cafeteira preparando café.">
-<div>
-<h2>A primeira webcam servia para vigiar café</h2>
-<p class="artigo-autor">Por: Giulliana Cestari</p>
-<p>Em 1991, pesquisadores da Universidade de Cambridge criaram a primeira webcam para não perderem tempo
-indo até a cozinha e encontrando a cafeteira vazia. Eles monitoravam o nível do café em tempo real
-nos seus monitores.</p>
+                <p class="artigo-autor">Por: Arthur Liber</p>
 
-<p class="artigo-fonte">Fonte: BBC</p>
+                <p>
+                    Depois de fazer história no futebol brasileiro, Neymar
+                    seguiu para a Europa. No Barcelona, formou um ataque
+                    memorável ao lado de Lionel Messi e Luis Suárez.
+                </p>
 
-<button>❤️ <span>0</span></button>
-<button>👍 <span>0</span></button>
-</div>
-</article>
+                <p>
+                    O jogador também teve uma passagem marcante pelo
+                    Paris Saint-Germain, tornando-se uma das principais
+                    estrelas do futebol mundial.
+                </p>
 
-<article>
-<img src="imagem-computador.jpg"
-alt="Ilustração de uma máquina sobre uma fita com números e símbolos, representando o processamento de dados.">
-<div>
-<h2>O primeiro computador não foi a máquina de Turing?</h2>
-<p class="artigo-autor">Por: Felipe Gibertoni</p>
-<p>Apesar de Alan Turing ser conhecido como pai da computação, ele não criou o primeiro computador.
-Entre os primeiros computadores, um deles foi chamado Colossus projetado por Tommy Flowers durante a
-Segunda Guerra Mundial e também, praticamente na mesma época, o ENIAC foi projetado por J. Presper
-Eckert e John Mauchly.
+                <button class="curtir">
+                    ❤️ <span>0</span>
+                </button>
 
-<br><br>Embora o Colossus tenha funcionado antes como um "herói de guerra" especializado, o ENIAC é
-frequentemente chamado de "pai" por ser o primeiro programável de uso geral.
+                <button class="curtir">
+                    👍 <span>0</span>
+                </button>
+            </div>
+        </article>
 
-<br><br>E aí, qual você consideraria como o primeiro computador?
-</p>
+        <article>
+            <img src="neymar.jpg" alt="Neymar Jr. com a Seleção Brasileira">
 
-<p class="artigo-fonte">Fonte: The National
-Museum
-of Computing</p>
+            <div class="conteudo">
+                <h2>🇧🇷 Neymar e a Seleção Brasileira</h2>
 
-<button>❤️ <span>0</span></button>
-<button>👍 <span>0</span></button>
-</div>
-</article>
-</main>
+                <p class="artigo-autor">Por: Arthur Liber</p>
 
-<script src="script.js"></script>
+                <p>
+                    Neymar também construiu uma trajetória importante
+                    defendendo a Seleção Brasileira. Com a camisa do Brasil,
+                    participou de grandes competições e marcou muitos gols.
+                </p>
+
+                <p>
+                    Um dos momentos mais especiais aconteceu nos Jogos
+                    Olímpicos do Rio de Janeiro, em 2016, quando o Brasil
+                    conquistou a medalha de ouro no futebol masculino.
+                </p>
+
+                <button class="curtir">
+                    ❤️ <span>0</span>
+                </button>
+
+                <button class="curtir">
+                    👍 <span>0</span>
+                </button>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Neymar Jr. Official — Blog criado por Arthur Liber</p>
+    </footer>
+
+    <script>
+        const botoes = document.querySelectorAll(".curtir");
+
+        botoes.forEach(function (botao) {
+
+            let curtiu = false;
+
+            botao.addEventListener("click", function () {
+
+                const contador = botao.querySelector("span");
+                let numero = Number(contador.textContent);
+
+                if (!curtiu) {
+                    numero++;
+                    curtiu = true;
+                    botao.style.backgroundColor = "#cce8ff";
+                } else {
+                    numero--;
+                    curtiu = false;
+                    botao.style.backgroundColor = "#eef3f7";
+                }
+
+                contador.textContent = numero;
+            });
+
+        });
+    </script>
+
 </body>
 
 </html>
